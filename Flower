@@ -1,0 +1,28 @@
+void setup(){
+  size(400,600);
+  background(200,200,200);
+}
+
+void draw(){
+  //stem
+  strokeWeight(20);
+  stroke(0,150,0);
+  line(200,200,200,600);
+  
+  //leaves
+  strokeWeight(0);
+  fill(0,150,0);
+  arc(210,400,40,40,-(radians(90)),radians(90));
+  arc(190,450,40,40,HALF_PI,radians(270));
+  
+  //petals
+  strokeWeight(1);
+  stroke(0,0,0);
+  fill(255,100,0);
+  ellipse(100,100,200,200);
+  ellipse(300,100,200,200);
+  ellipse(100,300,200,200);
+  ellipse(300,300,200,200);
+  fill(255,130,0);
+  ellipse(200,200,190,190);
+}
